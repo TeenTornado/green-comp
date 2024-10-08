@@ -7,7 +7,7 @@ const Hero = () => {
       
     <div className='pl-10 pt-60'>
       <b className="text-[180px] mb-[-40px] block font-[SF Pro Display] bg-gradient-to-r from-[#32bf00] to-[#175900] bg-clip-text text-transparent">
-        Green
+        Greenn
       </b>
       <b className="text-[180px] block font-[SF Pro Display] bg-gradient-to-r from-[#32bf00] to-[#175900] bg-clip-text text-transparent mb-3">
         Computing
