@@ -48,7 +48,7 @@ const features = [
 function Vision() {
   return (
     <div className="max-w-4xl mx-auto py-8"> {/* Centered and constrained width */}
-    <div className="pb-5"><img src="ArrowOrnament.png" alt="" className="" /></div>
+    <div className="pb-6"> <img src="ArrowOrnament.png" alt="" className="" /> </div>
       <BentoGrid className="gap-4">
         {features.map((feature, idx) => (
           <BentoCard key={idx} {...feature} />
