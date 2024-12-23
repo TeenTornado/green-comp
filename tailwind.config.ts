@@ -56,7 +56,10 @@ const config: Config = {
   			neonGreen: '#00FF00'
   		},
   		fontFamily: {
-  			sfpro: ["SF Pro Display", "sans-serif"]
+  			sfpro: [
+  				'SF Pro Display"',
+  				'sans-serif'
+  			]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

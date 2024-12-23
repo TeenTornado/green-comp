@@ -13,7 +13,6 @@ export default function Home() {
       <Vision />
       <Events />
       <Testimonials />
-      
     </div>
   );
 }
