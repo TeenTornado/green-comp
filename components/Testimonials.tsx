@@ -74,7 +74,11 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-full min-h-screen mt-24 xl:mt-44 flex flex-col items-center px-4">
+    <div className=" relative w-full h-screen mt-24 xl:mt-44 flex flex-col items-center">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/Bgec.png')" }}
+      />
       {/* TOP */}
       <div className="text-[10vw] md:text-[150px] text-center font-bold mb-[-40px] block font-sf-pro bg-gradient-to-r from-[#32bf00] to-[#175900] bg-clip-text text-transparent tracking-tight">
         Testimonials
@@ -90,7 +94,8 @@ const Testimonials = () => {
           .map((profile, index) => (
             <div
               key={index}
-              className="flex flex-col border border-green-900 rounded-lg relative w-full sm:w-80 lg:w-[418px] h-[255px]"
+              className="flex flex-col border rounded-lg relative w-full sm:w-80 lg:w-[418px] h-[255px]"
+              style={{ borderColor: "#10C900" }}
             >
               <BorderBeam />
               <div className="relative z-10 shadow-md rounded-3xl overflow-hidden flex flex-col h-full p-4 bg-black">
@@ -146,17 +151,17 @@ const Testimonials = () => {
         <div className="flex justify-end items-center w-full mt-6 pr-4 sm:pr-10">
           <button
             onClick={handlePrev}
-            className="mr-3 rounded-full w-12 h-12 flex items-center justify-center bg-black border-2 border-green-700"
+            className="mr-3 rounded-full w-16 h-16 flex items-center justify-center bg-black border-2 border-green-700"
           >
-            <div className="text-green-700 text-lg" style={{ lineHeight: 0 }}>
+            <div className="text-green-700 text-3xl" style={{ lineHeight: 0 }}>
               &#8592;
             </div>
           </button>
           <button
             onClick={handleNext}
-            className="rounded-full w-12 h-12 flex items-center justify-center bg-black border-2 border-green-700 "
+            className="rounded-full w-16 h-16 flex items-center justify-center bg-black border-2 border-green-700 "
           >
-            <div className="text-green-700 text-lg" style={{ lineHeight: 0 }}>
+            <div className="text-green-700 text-3xl" style={{ lineHeight: 0 }}>
               &#8594;
             </div>
           </button>
